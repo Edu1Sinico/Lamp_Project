@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lâmpada</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_animation.css">
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&family=Work+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <section class="section-center">
+        <div class="title">
+            <h1>Jogo da Lâmpada!</h1>
+        </div>
+        <div class="div-function">
+            <div class="lamp-bulb-reset" id="reset" onclick="reset()">
+                <button class="btn-reset">
+                    <img src="img/reset-icon.png" alt="Resetar" title="Resetar a Lâmpada">
+                </button>
+            </div>
+            <div class="lamp-bulb-replace" id="btn_replace">
+                <button class="btn-replace" onclick="trocar()">
+                    <img src="img/reset-icon.png" alt="Resetar" title="Trocar a Lâmpada">
+                </button>
+            </div>
+        </div>
+
+
+        <div class="img-lamp-bulb">
+            <img id="alvo-lampada" src="img/light-bulb-off.png" alt="Lâmpada" onclick="quebrar()">
+
+            <!-- <div class="broken_glasses" id="broken_glass">
+                <img class="glass_2" src="img/broken_glass/broken_glass_2.png" alt="">
+            </div> -->
+            
+            <audio id="broken_glass_sound" preload="auto">
+                <source src="audio/glass_bottle_break2.wav" type="audio/mpeg">
+            </audio>
+
+            <audio id="impact_glass" preload="auto">
+                <source src="audio/glass_bottle_impact_hard2.wav" type="audio/mpeg">
+            </audio>
+        </div>
+
+        <div class="lamp-bulb-btn">
+            <img src="img/light switch_off.png" alt="light_switch" id="light_switch" onclick="ligar()">
+            <audio id="switch_click" preload="auto">
+                <source src="audio/Switch Light Switch Sound Effect.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+    </section>
+</body>
+<script src="script.js"></script>
+
+</html>

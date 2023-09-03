@@ -1,0 +1,40 @@
+.broken_glasses .glass_2{
+    animation: fall2 2s ease-in;
+    transform:  translate(-1100%,350%) rotate(-280deg);
+}
+
+/* @keyframes fall2{
+    0% {
+        transform:  rotate(90deg);
+    }
+    10% {
+        transform:  rotate(60deg) translate(-200%,20%);
+    }
+    20% {
+        transform:  translate(-300%,-80%) rotate(20deg);
+    }
+    30% {
+        transform:  translate(-400%,10%) rotate(-20deg);
+    }
+    40% {
+        transform:  translate(-500%,80%) rotate(-60deg);
+    }
+    50% {
+        transform:  translate(-600%,140%) rotate(-100deg);
+    }
+    60% {
+        transform:  translate(-700%,200%) rotate(-140deg);
+    }
+    70% {
+        transform:  translate(-800%,250%) rotate(-180deg);
+    }
+    80% {
+        transform:  translate(-900%,270%) rotate(-220deg);
+    }
+    90% {
+        transform:  translate(-1000%,300%) rotate(-240deg);
+    }
+    100% {
+        transform:  translate(-1100%,350%) rotate(-280deg);
+    }
+} */

@@ -1,0 +1,119 @@
+body {
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    font-family: 'Roboto Mono', monospace;
+    font-family: 'Work Sans', sans-serif;
+    background-color: rgb(126, 255, 255);
+}
+
+.section-center {
+    display: flex;
+    width: auto;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5%;
+}
+
+.title h1 {
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+    margin: 0px;
+    margin-bottom: 20px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.section-center .img-lamp-bulb img {
+    width: 200px;
+    margin-bottom: 5vh;
+    cursor: pointer;
+    transition: transform 0.1s ease-in-out;
+}
+
+.section-center .lamp-bulb-btn #light_switch {
+    cursor: pointer;
+}
+
+.section-center .div-function .lamp-bulb-replace {
+    display: none;
+}
+
+.section-center .div-function .lamp-bulb-replace button {
+    height: 45px;
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background: none;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    animation: btn-reset-up 0.4s ease-in;
+}
+
+.section-center .div-function .lamp-bulb-replace button:hover {
+    transform: rotate(180deg);
+}
+
+.section-center .div-function .lamp-bulb-replace button img {
+    width: 45px;
+}
+
+.section-center .div-function .lamp-bulb-reset {
+    display: none;
+}
+
+.position {
+    position: relative;
+    z-index: 1;
+}
+
+.section-center .div-function {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-bottom: 15px;
+    height: 45px;
+}
+
+.section-center .div-function .lamp-bulb-reset button {
+    height: 45px;
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background: none;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    animation: btn-reset-up 0.4s ease-in;
+}
+
+.section-center .div-function .lamp-bulb-reset button:hover {
+    transform: rotate(180deg);
+}
+
+@keyframes btn-reset-up {
+    0% {
+        opacity: 0;
+        transform: translateY(45px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.section-center .div-function .lamp-bulb-reset button img {
+    width: 45px;
+}
+
+.section-center .lamp-bulb-btn .btn-light {
+    display: block;
+}
