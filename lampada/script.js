@@ -20,6 +20,7 @@ var light_switch = document.getElementById("light_switch");
 var switch_click = document.getElementById("switch_click");
 var broken_glass_sound = document.getElementById("broken_glass_sound");
 var impact_glass = document.getElementById("impact_glass");
+var broken_glass_animation = document.getElementById("broken_glass");
 
 // Função de piscar a lâmpada quando a página for carregada
 window.onload = function () {
@@ -76,15 +77,16 @@ function quebrar() {
         contQuebrar++;
         impact_glass.play();
         lamp_img.style.transform = 'rotate(-10deg) scale(0.9)';
-
         // função de time out
         setTimeout(function () {
             lamp_img.style.transform = 'rotate(0deg) scale(1)';
             if (contQuebrar == 10) {
                 lamp_img.src = quebrado;
+                broken_glass_animation.style.display = 'block';
                 btn_replace.style.display = 'block';
                 broken_glass_sound.play();
                 isBroken = false;
+                
                 return;
             }
         }, 100);
@@ -95,6 +97,7 @@ function quebrar() {
 function trocar() {
     lamp_img.src = desligado;
     btn_replace.style.display = 'none';
+    broken_glass_animation.style.display = 'none';
     contQuebrar = 0;
     cont = 0;
     btn_reset.style.display = 'none';

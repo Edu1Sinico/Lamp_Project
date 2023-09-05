@@ -1,40 +1,175 @@
-.broken_glasses .glass_2{
-    animation: fall2 2s ease-in;
-    transform:  translate(-1100%,350%) rotate(-280deg);
+#broken_glass{
+    display: none;
 }
 
-/* @keyframes fall2{
+.broken-glasses-cards{
+    position: absolute;
+    top: 25vh;
+}
+.broken-glasses-cards .glass_1{
+    position: absolute;
+    animation: fall-left 0.55s ease forwards;
+
+}
+.broken-glasses-cards .glass_2{
+    position: absolute;
+    animation: fall-left-big 0.85s ease forwards;
+}
+.broken-glasses-cards .glass_3{
+    position: absolute;
+    animation: fall 0.75s ease forwards;
+}
+.broken-glasses-cards .glass_4{
+    position: absolute;
+    animation: fall-right 0.75s ease forwards;
+}
+.broken-glasses-cards .glass_5{
+    position: absolute;
+    animation: fall-right-big 0.85s ease forwards;
+}
+.broken-glasses-cards .glass_6{
+    position: absolute;
+    animation: fall-right 0.75s ease forwards;
+} 
+
+@keyframes fall-right {
     0% {
-        transform:  rotate(90deg);
+        transform: translateY(0) rotate(0deg);
     }
-    10% {
-        transform:  rotate(60deg) translate(-200%,20%);
+
+    15% {
+        transform: translateY(-100px) translateX(50px) rotate(45deg);
     }
+
     20% {
-        transform:  translate(-300%,-80%) rotate(20deg);
+        transform: translateY(-200px) translateX(100px) rotate(90deg);
     }
-    30% {
-        transform:  translate(-400%,10%) rotate(-20deg);
-    }
-    40% {
-        transform:  translate(-500%,80%) rotate(-60deg);
-    }
-    50% {
-        transform:  translate(-600%,140%) rotate(-100deg);
-    }
-    60% {
-        transform:  translate(-700%,200%) rotate(-140deg);
-    }
-    70% {
-        transform:  translate(-800%,250%) rotate(-180deg);
-    }
-    80% {
-        transform:  translate(-900%,270%) rotate(-220deg);
-    }
-    90% {
-        transform:  translate(-1000%,300%) rotate(-240deg);
-    }
+
+    /* Continue adicionando os pontos intermediários conforme necessário */
+
     100% {
-        transform:  translate(-1100%,350%) rotate(-280deg);
+        transform: translateY(800px) translateX(350px) rotate(360deg);
     }
-} */
+}
+
+@keyframes fall-right-big {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    15% {
+        transform: translateY(-100px) translateX(100px) rotate(60deg);
+    }
+
+    20% {
+        transform: translateY(-200px) translateX(200px) rotate(120deg);
+    }
+
+    /* Continue ajustando os valores intermediários conforme necessário */
+
+    100% {
+        transform: translateY(900px) translateX(500px) rotate(720deg);
+    }
+}
+
+@keyframes fall-left {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    15% {
+        transform: translateY(-100px) translateX(-50px) rotate(-45deg);
+    }
+
+    20% {
+        transform: translateY(-200px) translateX(-100px) rotate(-90deg);
+    }
+
+    /* Continue adicionando os pontos intermediários conforme necessário */
+
+    100% {
+        transform: translateY(800px) translateX(-350px) rotate(-360deg);
+    }
+}
+
+@keyframes fall-left-big {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    15% {
+        transform: translateY(-100px) translateX(-100px) rotate(-60deg);
+    }
+
+    20% {
+        transform: translateY(-200px) translateX(-200px) rotate(-120deg);
+    }
+
+    /* Continue ajustando os valores intermediários conforme necessário */
+
+    100% {
+        transform: translateY(900px) translateX(-500px) rotate(-720deg);
+    }
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    15% {
+        transform: translateY(-100px) rotate(90deg);
+    }
+
+    20% {
+        transform: translateY(-200px) rotate(180deg);
+    }
+    25%{
+        transform: translateY(-225px) rotate(360deg);
+    }
+    30%{
+        transform: translateY(-250px) rotate(450deg);
+    }
+    35%{
+        transform: translateY(-250px) rotate(475deg);
+    }
+    40%{
+        transform: translateY(-225px) rotate(500deg);
+    }
+    45%{
+        transform: translateY(-225x) rotate(540deg);
+    }
+    50%{
+        transform: translateY(-200px) rotate(630deg);
+    }
+    55%{
+        transform: translateY(-100px) rotate(720deg);
+    }
+    60%{
+        transform: translateY(0px) rotate(810deg);
+    }
+    65%{
+        transform: translateY(50px) rotate(900deg);
+    }
+    70%{
+        transform: translateY(100px) rotate(990deg);
+    }
+    75%{
+        transform: translateY(200px) rotate(1080deg);
+    }
+    80%{
+        transform: translateY(300px) rotate(1170deg);
+    }
+    85%{
+        transform: translateY(400px) rotate(1290deg);
+    }
+    90%{
+        transform: translateY(500px) rotate(1380deg);
+    }
+    95%{
+        transform: translateY(600px) rotate(1470deg);
+    }
+    100%{
+        transform: translateY(700px) rotate(1560deg);
+    }
+}
